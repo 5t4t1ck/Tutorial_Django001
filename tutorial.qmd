@@ -1,0 +1,90 @@
+---
+title: "Tutorial"
+author: "Lic. Diego Saavedra Mg. Sc."
+execute: 
+  enabled: true
+format: 
+  html:
+    code-fold: true
+jupyter: python3
+---
+
+# Crear el espacio de trabajo.
+
+## Crear un entorno virtual .env
+
+```{bash}
+python3 -m venv .env
+```
+
+## Crear el archivo requirements.txt
+
+```{bash}
+touch requirements.txt
+```
+
+## Agregar el archivo .gitignore
+
+```{bash}
+touch .gitignore
+```
+
+## Activar el entorno virtual Windows
+
+```{bash}
+cd .env/Scripts activate
+```
+
+## Activar el entorno virtual Gnu/Linux
+
+```{bash}
+source .env/bin/activate
+```
+
+## Crear el nuevo proyecto en Django
+
+```{bash}
+pip install django==3.1.3
+```
+
+## Crear proyecto nuevo de Django
+
+```{bash}
+django-admin startproject config .
+```
+
+## Crear app en Django
+
+```{bash}
+python3 manage.py startproject app_name
+```
+
+## Crear las primeras migraciones
+
+```{bash}
+python manage.py makemigrations
+```
+
+## Crear las bases de datos y las tablas
+
+```{bash}
+python manage.py migrate
+```
+
+## Crear superusuario.
+
+```{bash}
+python3 manage.py createsuperuser
+```
+
+## Crear el archivo requirements.txt.
+
+```{bash}
+pip freeze > requirements.txt
+```
+
+## Instalación de archivos desde requirements.txt
+
+```{bash}
+pip install -r requirements.txt
+```

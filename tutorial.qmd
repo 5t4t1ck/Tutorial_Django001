@@ -1,90 +1,70 @@
 ---
-title: "Tutorial"
+title: "Tutorial Django 001"
 author: "Lic. Diego Saavedra Mg. Sc."
 execute: 
   enabled: true
 format: 
-  html:
-    code-fold: true
-jupyter: python3
+  pdf:
+    toc: true
+    number-sections: true
+    colorlinks: true
+    documentclass: scrartcl
+    papersize: letter
+    toc: true
+    toc-depth: 2
 ---
 
 # Crear el espacio de trabajo.
 
-## Crear un entorno virtual .env
+A continuación se describe una serie de comandos que le permitirá crear su espacio de trabajo tomando en cuenta algunos aspectos:
+
+1.  Entorno Virtual.
+2.  Activación del Entorno Virtual.
+3.  Creación del Archivo .gitignore.
+4.  Subir el repositorio a Github.
+
+## Comando para crear el Entorno Virtual.
 
 ```{bash}
-python3 -m venv .env
+python -m venv .env
 ```
 
-## Crear el archivo requirements.txt
-
-```{bash}
-touch requirements.txt
-```
-
-## Agregar el archivo .gitignore
-
-```{bash}
-touch .gitignore
-```
-
-## Activar el entorno virtual Windows
-
-```{bash}
-cd .env/Scripts activate
-```
-
-## Activar el entorno virtual Gnu/Linux
+## Comando para activar el entorno virtual.
 
 ```{bash}
 source .env/bin/activate
 ```
 
-## Crear el nuevo proyecto en Django
+## Comando para desactivar el entorno virtual.
 
 ```{bash}
-pip install django==3.1.3
+deactivate
 ```
 
-## Crear proyecto nuevo de Django
+## Comando para crear un Proyecto en Django.
 
 ```{bash}
-django-admin startproject config .
+django-admin createproject nombre_del_proyecto .
 ```
 
-## Crear app en Django
+## Comando para crear una app en Django.
 
 ```{bash}
-python3 manage.py startproject app_name
+django-admin createapp nombre_de_la_app
 ```
 
-## Crear las primeras migraciones
+## Comando para correr el servidor.
 
 ```{bash}
-python manage.py makemigrations
+python manage.py runserver
 ```
 
-## Crear las bases de datos y las tablas
+## Comando para detener el servidor
+
+No existe un comando para detener el servidor local, pero puedes utilizar la combinación de teclas:
 
 ```{bash}
-python manage.py migrate
+Ctrl + c
 ```
 
-## Crear superusuario.
-
-```{bash}
-python3 manage.py createsuperuser
-```
-
-## Crear el archivo requirements.txt.
-
-```{bash}
-pip freeze > requirements.txt
-```
-
-## Instalación de archivos desde requirements.txt
-
-```{bash}
-pip install -r requirements.txt
-```
+Link del Repositorio.

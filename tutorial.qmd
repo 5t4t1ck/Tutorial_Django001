@@ -1,20 +1,33 @@
 ---
 title: "Tutorial Django 001"
 author: "Lic. Diego Saavedra Mg. Sc."
+date: today
 execute: 
   enabled: true
 format: 
   pdf:
-    toc: true
+    lang: es
+    toc: true #
+    #toc-title: Tutorial de Django 001
+    toc-depth: 3
     number-sections: true
     colorlinks: true
-    documentclass: scrartcl
-    papersize: letter
-    toc: true
-    toc-depth: 2
+    documentclass: report #tipo de documento
+    papersize: A4
+    #lof: true #lista de figuras
+    #lot: true #ista de tablas
+    highlight-style: radical #Resaltado de código
+    fontfamily: libertinus #Fuente de Texto
+    
+    cite-method: biblatex
+    bibliography: references.bib
+    cls: apa.csl
+    biblio-title: Bibliografía
 ---
 
-# Crear el espacio de trabajo.
+# Crear el espacio de trabajo. {.unnumbered .unlisted}
+
+Este tutoríal es publicado siguiendo los lineamientos de @school2022
 
 A continuación se describe una serie de comandos que le permitirá crear su espacio de trabajo tomando en cuenta algunos aspectos:
 
@@ -67,4 +80,4 @@ No existe un comando para detener el servidor local, pero puedes utilizar la com
 Ctrl + c
 ```
 
-Link del Repositorio.
+[Repositorio en Github](https://github.com/5t4t1ck/project)
